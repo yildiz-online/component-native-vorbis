@@ -2,7 +2,8 @@ cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" \
 -DOGG_INCLUDE_DIRS="ogg/linux64/include" \
--DOGG_LIBRARIES="ogg/linux64/lib" \
+-DOGG_LIBRARIES="ogg/linux64/lib/libogg.so" \
+-DBUILD_SHARED_LIBS=ON \
 -G "Unix Makefiles"
 
 make install
@@ -19,6 +20,5 @@ rm -R lib
 rm vorbis.pc
 rm vorbisenc.pc
 rm vorbisfile.pc
-rm -R ogg
 
 return $r1
