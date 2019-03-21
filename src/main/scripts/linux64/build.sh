@@ -22,3 +22,4 @@ rm vorbisenc.pc
 rm vorbisfile.pc
 
 return $r1
+
