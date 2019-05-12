@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake ../../c++ \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" \
@@ -21,5 +23,5 @@ rm vorbis.pc
 rm vorbisenc.pc
 rm vorbisfile.pc
 
-return $r1
+exit $r1
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake ../../c++ \
 -DCMAKE_C_FLAGS="-w" \
 -DCMAKE_BUILD_TYPE=Release \
@@ -22,5 +24,5 @@ rm vorbisenc.pc
 rm vorbisfile.pc
 rm -R ogg
 
-return $r1
+exit $r1
 
